@@ -1,0 +1,29 @@
+//CREATE 
+composer create-project laravel/laravel my_path --prefer-dist
+
+//RUN
+php artisan serve
+
+//DATABASES SETUP
+1. .env file
+2. config/database.php
+
+//sample Migration
+php artisan make:migration create_sample_data_table --create=sample_data
+ folder: migrations/tables
+
+//migrate
+php artisan migrate
+
+//creating model for database operation
+php artisan make:model {my_file_name} -m
+ folder: app/my_file_name.php
+code: protected $fillable = ['name','age'];
+
+
+//Handle HTTP request
+php artisan make:controller my_filenameController --resource
+folder: app/Http/myFilenameController.php
+
+
+
